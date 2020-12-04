@@ -1,0 +1,195 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.mainBlock {
+  margin: 5%;
+  border-radius: 60px;
+  background-color: #d9ffed;
+  width: 90%;
+  height: 30%;
+}
+.balance {
+  display: inline-block;
+  margin: 2%;
+  height: 180px;
+  width: 200px;
+  border-radius: 60px;
+  background-color: #473198;
+  text-align: center;
+}
+.balance > h3 {
+  color: #d9ffed;
+}
+.balance > H1 {
+  color: #c1cc99;
+}
+.balance > Button {
+  height: 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: #e8e9f3;
+  background-color: #a6a6a8;
+  border-style: none;
+}
+.avatar {
+  float: right;
+  text-align: -webkit-center;
+  margin: 3%;
+  height: 150px;
+  width: 200px;
+  background-color: #d9ffed;
+}
+.avatar > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 60px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #adfc92;
+}
+.stavki > Button {
+  margin-left: 40%;
+  margin-bottom: 1%;
+  width: 20%;
+  height: 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: #e8e9f3;
+  background-color: #a6a6a8;
+  border-style: none;
+}
+.buttonblock {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  border-radius: 60px;
+  background-color: #d9ffed;
+  width: 40%;
+  height: 200px;
+}
+.buttonblock > p {
+  margin: 0%;
+  text-align: center;
+}
+.blockimg {
+  height: 150px;
+  width: 150px;
+  margin: 3%;
+  margin-left: 30%;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #473198;
+  background-color: #272635;
+}
+.mainEvents {
+  margin-top: 2%;
+  position: sticky;
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+  background-color: #d9ffed;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.buttonOpen {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2%;
+  margin-left: 45%;
+  width: 10%;
+  height: 30px;
+  border-radius: 60px;
+  color: #e8e9f3;
+  background-color: #a6a6a8;
+  border-style: none;
+}
+.search {
+  text-align: center;
+  border-radius: 60px;
+  border-color: #473198;
+  outline: none;
+  width: 20%;
+  margin-top: 1%;
+  margin-left: 40%;
+}
+.events {
+  display: inline-block;
+  width: 80%;
+  height: 25%;
+  margin-top: 2%;
+  margin-left: 10%;
+  border-radius: 60px;
+  background-color: #d9ffed;
+  box-shadow: 0px 0px 8px 0px #272635;
+}
+.eventsImg {
+  float: left;
+  text-align: -webkit-center;
+  margin: 3%;
+  height: 50px;
+  width: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #473198;
+  border-radius: 60px;
+  background-color: #d9ffed;
+}
+.eventsInfo {
+  text-align: center;
+}
+.eventsInfo > H1 {
+  font-size: 70px;
+  margin-top: -6%;
+  margin-right: 10%;
+  margin-bottom: 0%;
+}
+.eventsInfo > H5 {
+  color: #adfc92;
+  background-color: #473198;
+  border-radius: 60px;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: 45%;
+  width: 10%;
+  height: 20px;
+}
+.accept {
+  float: right;
+}
