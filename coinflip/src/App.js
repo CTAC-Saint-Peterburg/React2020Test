@@ -48,7 +48,7 @@ function App() {
                   </div>
                   <div className="eventsInfo">
                       <h1>VS</h1>
-                      <h5>100₽</h5>
+                      <h5>110₽</h5>
                   </div>
                   <div className="accept">
                       <button>принять</button>
