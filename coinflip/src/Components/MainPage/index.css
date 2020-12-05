@@ -1,64 +1,46 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.mainPage-background {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.mainBlock {
-  margin: 5%;
+.mainPage-menu-block {
   border-radius: 60px;
   background-color: #d9ffed;
   width: 90%;
-  height: 30%;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 30vh;
 }
-.balance {
+
+.mainPage-menu-block-menu {
+  height: 55%;
+}
+
+.mainPage-menu-block-header-balance_block {
   display: inline-block;
   margin: 2%;
-  height: 180px;
-  width: 200px;
   border-radius: 60px;
   background-color: #473198;
   text-align: center;
+  max-width: 200px;
+  width: 45%;
+  height: 180px;
 }
-.balance > h3 {
+
+.mainPage-menu-block-header-balance_block > h3 {
   color: #d9ffed;
 }
-.balance > H1 {
+
+.mainPage-menu-block-header-balance_block > H1 {
   color: #c1cc99;
 }
-.balance > Button {
+
+.mainPage-menu-block-header-balance_block > Button {
   height: 30px;
   font-weight: 600;
   border-radius: 50px;
@@ -66,15 +48,19 @@
   background-color: #a6a6a8;
   border-style: none;
 }
-.avatar {
+
+.mainPage-menu-block-header-profile_block {
   float: right;
   text-align: -webkit-center;
   margin: 3%;
   height: 150px;
-  width: 200px;
   background-color: #d9ffed;
+  max-width: 200px;
+  width: 45%;
+  border-radius: 50%;
 }
-.avatar > img {
+
+.mainPage-menu-block-header-profile_block > img {
   height: 50px;
   width: 50px;
   border-radius: 60px;
@@ -82,7 +68,8 @@
   border-width: 5px;
   border-color: #adfc92;
 }
-.stavki > Button {
+
+.mainPage-menu-block-header-bets_section > Button {
   margin-left: 40%;
   margin-bottom: 1%;
   width: 20%;
@@ -93,7 +80,8 @@
   background-color: #a6a6a8;
   border-style: none;
 }
-.buttonblock {
+
+.mainPage-menu-block-menu-content {
   display: inline-block;
   margin-left: 5%;
   margin-right: 5%;
@@ -101,25 +89,30 @@
   border-radius: 60px;
   background-color: #d9ffed;
   width: 40%;
-  height: 200px;
+  min-height: 25vh;
+  height: 25%;
 }
-.buttonblock > p {
+
+.mainPage-menu-block-menu-content > p {
   margin: 0%;
   text-align: center;
 }
-.blockimg {
-  height: 150px;
-  width: 150px;
-  margin: 3%;
-  margin-left: 30%;
+
+.mainPage-menu-block-menu-content-image {
+  height: 50%;
+  max-height: 150px;
+  width: 50%;
+  max-width: 150px;
   border-radius: 50px;
   border-style: solid;
   border-width: 5px;
   border-color: #473198;
   background-color: #272635;
+  margin: calc(10vh - 50px) auto 0;
 }
-.mainEvents {
-  margin-top: 2%;
+
+.mainPage-main_events {
+  margin-top: 4%;
   position: sticky;
   width: 100%;
   height: 600px;
@@ -128,28 +121,44 @@
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
 }
-.buttonOpen {
+
+.mainPage-main_events-button {
+  width: 10%;
+  min-width: 90px;
+  height: 30px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.mainPage-main_events-button > button {
   text-align: center;
   font-weight: 600;
-  margin-top: 2%;
-  margin-left: 45%;
-  width: 10%;
-  height: 30px;
+  height: 100%;
+  width: 100%;
   border-radius: 60px;
   color: #e8e9f3;
   background-color: #a6a6a8;
   border-style: none;
 }
-.search {
+
+.mainPage-main_events-search_input {
+  width: 10%;
+  min-width: 90px;
+  height: 30px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.mainPage-main_events-search_input > input {
   text-align: center;
   border-radius: 60px;
   border-color: #473198;
   outline: none;
-  width: 20%;
-  margin-top: 1%;
-  margin-left: 40%;
+  height: 100%;
+  width: 97%;
 }
-.events {
+
+.mainPage-main_events-event_list {
   display: inline-block;
   width: 90%;
   height: 30%;
@@ -160,7 +169,8 @@
   background-color: #d9ffed;
   box-shadow: 0px 0px 8px 0px #272635;
 }
-.eventsImg {
+
+.mainPage-main_events-event_list-event-left_block-img {
   float: left;
   text-align: center;
   margin-left: 10%;
@@ -172,23 +182,27 @@
   border-radius: 60px;
   background-color: #d9ffed;
 }
-.leftBlock {
+
+.mainPage-main_events-event_list-event-left_block {
   float: left;
   margin: 4%;
 }
-.eventsInfo {
+
+.mainPage-main_events-event_list-event-info {
   text-align: center;
   float: left;
   margin-top: 2%;
   margin-left: 25%;
 }
-.eventsInfo > H1 {
+
+.mainPage-main_events-event_list-event-info > H1 {
   font-size: 70px;
   margin-top: 0px;
   margin-right: 10%;
   margin-bottom: 0%;
 }
-.eventsInfo > H5 {
+
+.mainPage-main_events-event_list-event--info > H5 {
   color: #adfc92;
   background-color: #473198;
   border-radius: 60px;
@@ -196,16 +210,22 @@
   margin-bottom: 1%;
   height: 20px;
 }
-.winLose {
-  display: inline-block;
+
+.mainPage-main_events-event_list-event-right_block {
 }
-.accept {
+
+.mainPage-main_events-event_list-event-right_block-accept {
   float: right;
   margin-top: 10px;
   margin-right: 10px;
   display: inline-flex;
 }
-.accept > img {
+
+.winLose {
+  display: inline-block;
+}
+
+.mainPage-main_events-event_list-event-right_block-accept > img {
   text-align: center;
   margin-left: 2px;
   margin-right: 2px;
