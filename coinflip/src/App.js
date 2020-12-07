@@ -63,6 +63,8 @@ function App() {
             <img/>
             <p>Поражение:</p>
             <img/>
+          </div>
+          <div className="acceptButton">
             <button>принять</button>
           </div>
         </div>
