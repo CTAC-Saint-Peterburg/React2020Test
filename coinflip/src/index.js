@@ -1,18 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MainPage from "./Components/MainPage/MainPage";
+import Payment from "./Components/Payment/Payment";
+
+let NotFoundPage = ()=><h1>not found</h1>;
 ReactDOM.render(
-  <Router>
-    <Switch>
-      <Route path="/">
-        <App />
-      </Route>
-    </Switch>
-  </Router>,
-  document.getElementById("root")
+    <Router>
+        <Switch>
+            <Route exact={true} path="/" >
+                <MainPage />
+            </Route>
+            <Route exact={true} path="/payment" >
+                <Payment />
+            </Route>
+            <Route component={NotFoundPage} />
+        </Switch>
+    </Router>,
+    document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
