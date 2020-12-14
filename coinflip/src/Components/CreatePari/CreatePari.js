@@ -1,10 +1,23 @@
 import "./CreatePari.css";
 import {Link} from "react-router-dom";
+import React from 'react';
 
+export default  class CreatePari extends React.Component {
 
-function CreatePari() {
-    return (
-        <div>
+    componentDidMount(){
+        document.querySelector("meta[name=viewport]").setAttribute(
+            'content',
+            'width=device-width, initial-scale=0.5');
+    }
+
+    componentWillUnmount(){
+        document.querySelector("meta[name=viewport]").setAttribute(
+            'content',
+            'width=device-width, initial-scale1');
+    }
+
+    render() {
+        return <div>
             <div className="background">
                 <div className="backToMain">
                     <button><Link to="/MainPage">назад</Link></button>
@@ -36,7 +49,5 @@ function CreatePari() {
                 </div>
             </div>
         </div>
-    );
+    }
 }
-
-export default CreatePari;
