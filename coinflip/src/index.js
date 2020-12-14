@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MainPage from "./Components/MainPage/MainPage";
 import Payment from "./Components/Payment/Payment";
 import CreatePari from "./Components/CreatePari/CreatePari";
+import Settings from "./Components/Settings/Settings";
+import HistoryPari from "./Components/HistoryPari/HistoryPari";
 
 let NotFoundPage = ()=><h1>not found</h1>;
 ReactDOM.render(
@@ -19,6 +21,12 @@ ReactDOM.render(
             </Route>
             <Route exact={true} path="/payment" >
                 <Payment />
+            </Route>
+            <Route exact={true} path="/Settings" >
+                <Settings />
+            </Route>
+            <Route exact={true} path="/HistoryPari" >
+                <HistoryPari />
             </Route>
             <Route component={NotFoundPage} />
         </Switch>
