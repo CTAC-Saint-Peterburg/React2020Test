@@ -39,7 +39,7 @@ function MainPage() {
             <div className="buttonblock">
                 <div className="blockimg"></div>
                 <p>
-                    <a href="">создать пари</a>
+                    <Link to="/CreatePari">создать пари</Link>
                 </p>
             </div>
             <div className="mainEvents">

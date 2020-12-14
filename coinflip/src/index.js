@@ -5,13 +5,17 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MainPage from "./Components/MainPage/MainPage";
 import Payment from "./Components/Payment/Payment";
+import CreatePari from "./Components/CreatePari/CreatePari";
 
 let NotFoundPage = ()=><h1>not found</h1>;
 ReactDOM.render(
     <Router>
         <Switch>
-            <Route exact={true} path="/" >
+            <Route exact={true} path="/Mainpage" >
                 <MainPage />
+            </Route>
+            <Route exact={true} path="/CreatePari" >
+                <CreatePari />
             </Route>
             <Route exact={true} path="/payment" >
                 <Payment />
