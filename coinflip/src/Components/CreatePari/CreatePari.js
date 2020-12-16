@@ -7,13 +7,13 @@ export default  class CreatePari extends React.Component {
     componentDidMount(){
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
-            'width=device-width, initial-scale=0.5');
+            'width=device-width, initial-scale=0.4');
     }
 
     componentWillUnmount(){
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
-            'width=device-width, initial-scale1');
+            'width=device-width, initial-scale=1');
     }
 
     render() {

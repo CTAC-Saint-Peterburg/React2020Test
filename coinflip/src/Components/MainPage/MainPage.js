@@ -21,7 +21,7 @@ function MainPage() {
             <div class="buttonblock">
                 <div class="blockimg"></div>
                 <p>
-                    <a href="">история пари</a>
+                    <Link to="/HistoryPari">история пари</Link>
                 </p>
             </div>
             <div className="buttonblock">
@@ -33,7 +33,7 @@ function MainPage() {
             <div className="buttonblock">
                 <div className="blockimg"></div>
                 <p>
-                    <a href="">настройки</a>
+                    <Link to="/Settings">настройки</Link>
                 </p>
             </div>
             <div className="buttonblock">
