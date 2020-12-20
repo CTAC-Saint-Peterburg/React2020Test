@@ -1,18 +1,37 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import MainPage from "./Components/MainPage";
-import reportWebVitals from "./reportWebVitals";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MainPage from "./Components/MainPage/MainPage";
+import Payment from "./Components/Payment/Payment";
+import CreatePari from "./Components/CreatePari/CreatePari";
+import Settings from "./Components/Settings/Settings";
+import HistoryPari from "./Components/HistoryPari/HistoryPari";
+
+let NotFoundPage = ()=><h1>not found</h1>;
 ReactDOM.render(
-  <Router>
-    <Switch>
-      <Route path="/">
-        <MainPage />
-      </Route>
-    </Switch>
-  </Router>,
-  document.getElementById("root")
+    <Router>
+        <Switch>
+            <Route exact={true} path="/Mainpage" >
+                <MainPage />
+            </Route>
+            <Route exact={true} path="/CreatePari" >
+                <CreatePari />
+            </Route>
+            <Route exact={true} path="/payment" >
+                <Payment />
+            </Route>
+            <Route exact={true} path="/Settings" >
+                <Settings />
+            </Route>
+            <Route exact={true} path="/HistoryPari" >
+                <HistoryPari />
+            </Route>
+            <Route component={NotFoundPage} />
+        </Switch>
+    </Router>,
+    document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,94 @@
+
+.backToMain > Button {
+    float: left;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 20%;
+    height: 100px;
+    border-radius: 60px;
+    color: #e8e9f3;
+    background-color: #a6a6a8;
+    border-style: none;
+    font-size: 3em;
+}
+.refillIcon {
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
+    border-radius: 60px;
+    background-color: #d9ffed;
+    width: 35%;
+    height: 300px;
+}
+.refillIconImg {
+    height: 65%;
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 14%;
+    border-radius: 60px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #473198;
+    background-color: #272635;
+}
+.MenuWhiteFiller {
+    margin-top: 10%;
+    height: 1800px;
+    width: 100%;
+    background-color: #d9ffed;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+.createpariTitle {
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 0%;
+    font-size: 1.5em;
+}
+.choice {
+    margin-top: 2%;
+    margin-left: 4%;
+}
+.choice h2 {
+    font-size: 2.3em;
+}
+.choice h1 {
+    text-align: center;
+    margin-left: 2%;
+    font-size: 3.5em;
+    background-color: #473198;
+    color: #d9ffed;
+    border-radius: 60px;
+    width: 55%;
+}
+.choice button {
+    text-align: center;
+    margin-left: 3%;
+    width: 25%;
+    height: 70px;
+    border-radius: 60px;
+    color: #e8e9f3;
+    background-color: #a6a6a8;
+    border-style: none;
+    font-size: 2em;
+    font-weight: 600;
+}
+.createButton {
+    text-align: center;
+    margin-left: 4%;
+    margin-top: 4%;
+    width: 90%;
+    height: 70px;
+    border-radius: 60px;
+    color: #e8e9f3;
+    background-color: #c1cc99;
+    border-style: none;
+    font-size: 3em;
+    font-weight: 600;
+}
+.checkpari {
+    width: 100px;
+    height: 100px;
+}
