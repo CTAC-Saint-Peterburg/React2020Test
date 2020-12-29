@@ -107,7 +107,7 @@
 }
 .okno {
     position: fixed;
-    margin-top: -150%;
+    top: calc(50vh - 150px);
     margin-left: 30%;
     height: 400px;
     width: 400px;
