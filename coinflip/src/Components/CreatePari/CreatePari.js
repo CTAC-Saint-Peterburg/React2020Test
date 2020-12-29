@@ -40,7 +40,7 @@ export default  class CreatePari extends React.Component {
         return <div>
             <div className="background">
                 <div className="backToMain">
-                    <button><Link to="/MainPage">назад</Link></button>
+                    <button><Link to="/MainPage">ндазад</Link></button>
                 </div>
                 <div className="refillIcon">
                     <div className="refillIconImg"></div>
