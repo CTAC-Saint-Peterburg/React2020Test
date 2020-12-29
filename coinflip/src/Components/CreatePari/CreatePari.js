@@ -31,7 +31,7 @@ export default  class CreatePari extends React.Component {
             'width=device-width, initial-scale=1');
     }
 
-    function zapusk(){
+    zapusk(){
         let x = document.getElementById("okno");
         x.style.display = "block";
     };
@@ -40,7 +40,7 @@ export default  class CreatePari extends React.Component {
         return <div>
             <div className="background">
                 <div className="backToMain">
-                    <button><Link to="/MainPage">ндазад</Link></button>
+                    <button><Link to="/MainPage">назад</Link></button>
                 </div>
                 <div className="refillIcon">
                     <div className="refillIconImg"></div>
@@ -49,7 +49,7 @@ export default  class CreatePari extends React.Component {
                     <div className="createpariTitle"><h1>создать пари</h1></div>
                     <div className="choice">
                         <h2>Вид спорта:</h2><h1>Футбол</h1>
-                        <button onClick="zapusk();">выбрать</button>
+                        <button onClick={this.zapusk}>выбрать</button>
                     </div>
                     <div className="choice">
                         <h2>Турнир:</h2><h1>Чемпионат России</h1>
