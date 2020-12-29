@@ -68,12 +68,11 @@ export default  class CreatePari extends React.Component {
                     </div>
                     <button className="createButton">создать</button>
                 </div>
+                {this.state.SportsList.map(value => <>value</>)}
                 {this.state.displaySportSelect &&
                 <div className="okno" id="okno">
                     <div className="oknoText">
-                        <h3><a onClick={this.zapusk} id="football">Футбол</a></h3>
-                        <h3><a onClick="" id="hockey">Хоккей</a></h3>
-                        <h3><a onClick="" id="basketball">Специальные события</a></h3>
+                        {this.state.SportsList.map(value => <h3><a onClick={this.zapusk} id={value}>{value}</a></h3>)}
                     </div>
                 </div>}
 
