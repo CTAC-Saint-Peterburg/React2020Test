@@ -8,9 +8,11 @@ export default  class CreatePari extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            SportsList: []
+            SportsList: [],
+            displaySportSelect: false
         }
        this.getSportsList = this.getSportsList.bind(this)
+       this.zapusk = this.zapusk.bind(this)
     }
     async getSportsList(){
         const response = await API.get("/getSportsList")
@@ -32,8 +34,7 @@ export default  class CreatePari extends React.Component {
     }
 
     zapusk(){
-        let x = document.getElementById("okno");
-        x.style.display = "block";
+        this.setState({displaySportSelect:!this.state.displaySportSelect})
     };
 
     render() {
@@ -67,13 +68,15 @@ export default  class CreatePari extends React.Component {
                     </div>
                     <button className="createButton">создать</button>
                 </div>
+                {this.state.displaySportSelect &&
                 <div className="okno" id="okno">
                     <div className="oknoText">
-                        <h3><a onClick="" id="football">Футбол</a></h3>
+                        <h3><a onClick={this.zapusk} id="football">Футбол</a></h3>
                         <h3><a onClick="" id="hockey">Хоккей</a></h3>
                         <h3><a onClick="" id="basketball">Специальные события</a></h3>
                     </div>
-                </div>
+                </div>}
+
             </div>
         </div>
     }

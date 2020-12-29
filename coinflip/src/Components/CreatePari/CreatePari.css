@@ -116,7 +116,7 @@
     box-shadow: 0px 0px 0px 1200px #000000cf;
     text-align: center;
     z-index: 999;
-    display: none;
+    display: block;
 }
 .oknoText {
     margin-top: 25%;
