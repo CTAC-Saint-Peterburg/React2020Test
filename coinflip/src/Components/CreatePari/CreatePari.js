@@ -1,10 +1,25 @@
 import "./CreatePari.css";
 import {Link} from "react-router-dom";
 import React from 'react';
+import API from "../../utils/API";
 
 export default  class CreatePari extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            SportsList: []
+        }
+       this.getSportsList = this.getSportsList.bind(this)
+    }
+    async getSportsList(){
+        const response = await API.get("/getSportsList")
+        console.log(response.data)
+        this.setState({SportsList: response.data })
+    }
+
     componentDidMount(){
+        this.getSportsList();
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
             'width=device-width, initial-scale=0.4');
@@ -15,6 +30,11 @@ export default  class CreatePari extends React.Component {
             'content',
             'width=device-width, initial-scale=1');
     }
+
+    function zapusk(){
+        let x = document.getElementById("okno");
+        x.style.display = "block";
+    };
 
     render() {
         return <div>
@@ -29,7 +49,7 @@ export default  class CreatePari extends React.Component {
                     <div className="createpariTitle"><h1>создать пари</h1></div>
                     <div className="choice">
                         <h2>Вид спорта:</h2><h1>Футбол</h1>
-                        <button>выбрать</button>
+                        <button onClick="zapusk();">выбрать</button>
                     </div>
                     <div className="choice">
                         <h2>Турнир:</h2><h1>Чемпионат России</h1>
@@ -46,6 +66,13 @@ export default  class CreatePari extends React.Component {
                         <button>выбрать</button>
                     </div>
                     <button className="createButton">создать</button>
+                </div>
+                <div className="okno" id="okno">
+                    <div className="oknoText">
+                        <h3><a onClick="" id="football">Футбол</a></h3>
+                        <h3><a onClick="" id="hockey">Хоккей</a></h3>
+                        <h3><a onClick="" id="basketball">Специальные события</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
